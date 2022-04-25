@@ -26,10 +26,10 @@ const Cart = () => {
   } = useStateContext();
   const { user, error, isLoading } = useUser();
   const handleCheckout = async () => {
-    if (!user) {
-      toast.error('please login for checkout');
-      return (document.location.href = '/api/auth/login');
-    }
+    // if (!user) {
+    //   toast.error('please login for checkout');
+    //   return (document.location.href = '/api/auth/login');
+    // }
     const stripe = await getStripe();
 
     const response = await fetch('/api/stripe', {
