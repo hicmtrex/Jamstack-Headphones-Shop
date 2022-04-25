@@ -3,7 +3,7 @@ import { withApiAuthRequired, getSession } from '@auth0/nextjs-auth0';
 
 const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
-export default withApiAuthRequired(async function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
       const params = {
@@ -52,4 +52,4 @@ export default withApiAuthRequired(async function handler(req, res) {
     res.setHeader('Allow', 'POST');
     res.status(405).end('Method Not Allowed');
   }
-});
+}
