@@ -2,7 +2,7 @@ repo_name: hicmtrex/Jamstack-Headphones-Shop
 report_id: f286ad1f4d1e43cfdefd3d9cd320b8cf
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:17:29+00:00'
+timestamp: '2024-02-29T19:09:19+00:00'
 requested_by: invalid-email-address
 provider: github
 branch: main
@@ -30,7 +30,7 @@ tools:
   detection_source_url: https://github.com/hicmtrex/Jamstack-Headphones-Shop
   detection_source: Repo Metadata
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 12.1.0
   open_source: true
